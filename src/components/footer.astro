@@ -5,11 +5,6 @@ import type { FooterLink } from "~/types";
 
 const links: Array<FooterLink> = [
   {
-    url: "https://astro.build/",
-    description: "Astro's official website",
-    icon: "mdi:home",
-  },
-  {
     url: "https://github.com/mhyfritz/astro-landing-page",
     description: "View source on GitHub",
     icon: "fa-brands:github-alt",
@@ -27,11 +22,11 @@ const links: Array<FooterLink> = [
 ];
 ---
 
-<footer class="relative flex h-64 items-center justify-center">
+<footer class="relative flex flex-col h-64 items-center justify-center p-3">
   <div class="absolute inset-0 overflow-hidden opacity-40">
     <HeroImage />
   </div>
-  <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
+  <!-- <ul class="relative grid grid-cols-2 gap-4 sm:grid-cols-4">
     {
       links.map((link) => (
         <li>
@@ -45,5 +40,11 @@ const links: Array<FooterLink> = [
         </li>
       ))
     }
-  </ul>
+  </ul> -->
+  <p class="text-m text-center">
+    Devpal Solutions LLC, 102 Gold Ave SW, Albuquerque, NM 87102
+  </p>
+  <p class="text-m text-center">
+    {"Contact us at: contact <at> digital.solutions"}
+  </p>
 </footer>

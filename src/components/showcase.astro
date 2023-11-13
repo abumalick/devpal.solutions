@@ -14,18 +14,22 @@ const orderedSites = featuredSites.sort(
 
 <ContentSection title="Showcase" id="showcase">
   <Fragment slot="lead">
-    Astro is <span class="text-primary">versatile</span>.{" "}
-    <span class="text-primary">Explore</span> what's possible and get{" "}
-    <span class="text-primary">inspired</span>.
+    Discover the <span class="text-primary">impact of our work</span>. Here, we
+    highlight key projects and innovations where <span
+      class="text-primary">Devpal Solutions</span
+    > have contributed. From advanced tech solutions to collaborative successes, each project
+    showcases <span class="text-primary"
+      >our commitment to excellence in the digital realm.</span
+    >
   </Fragment>
   <div class="max-w-6xl space-y-2">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
       {orderedSites.map((site) => <ShowcaseCard site={site} />)}
     </div>
-    <p class="text-right text-sm">
+    <!-- <p class="text-right text-sm">
       <a class="text-primary" href="https://astro.build/showcase/">
         ...and more &rarr;
       </a>
-    </p>
+    </p> -->
   </div>
 </ContentSection>

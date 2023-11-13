@@ -10,80 +10,77 @@ const frameworks: Array<CompatibilityItem> = [
     url: "https://reactjs.org/",
   },
   {
-    title: "Preact",
-    icon: "frameworks/preact",
-    url: "https://preactjs.com/",
+    title: "React Native",
+    icon: "frameworks/react-native",
+    url: "https://reactnative.dev/",
   },
   {
-    title: "Svelte",
-    icon: "frameworks/svelte",
-    url: "https://svelte.dev/",
+    title: "Ionic Framework",
+    icon: "frameworks/ionic",
+    url: "https://ionicframework.com/",
+  },
+  // {
+  //   title: "Vue",
+  //   icon: "frameworks/vue",
+  //   url: "https://vuejs.org/",
+  // },
+  {
+    title: "Ruby on Rails",
+    icon: "frameworks/ruby-on-rails",
+    url: "https://rubyonrails.org/",
   },
   {
-    title: "Vue",
-    icon: "frameworks/vue",
-    url: "https://vuejs.org/",
+    title: "Django",
+    icon: "frameworks/django",
+    url: "https://www.djangoproject.com/",
   },
   {
-    title: "Solid",
-    icon: "frameworks/solid",
-    url: "https://www.solidjs.com/",
-  },
-  {
-    title: "Lit",
-    icon: "frameworks/lit",
-    url: "https://lit.dev/",
+    title: "Node.js",
+    icon: "frameworks/node",
+    url: "https://nodejs.org/",
   },
 ];
 
-const platforms: Array<CompatibilityItem> = [
+const languages: Array<CompatibilityItem> = [
   {
-    title: "Netlify",
-    icon: "platforms/netlify",
-    url: "https://www.netlify.com/",
+    title: "JavaScript",
+    icon: "languages/javascript",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
-    title: "Vercel",
-    icon: "platforms/vercel",
-    url: "https://vercel.com/",
+    title: "TypeScript",
+    icon: "languages/typescript",
+    url: "https://www.typescriptlang.org/",
   },
   {
-    title: "Cloudflare",
-    icon: "fa-brands:cloudflare",
-    url: "https://pages.cloudflare.com/",
+    title: "Ruby",
+    icon: "languages/ruby",
+    url: "https://www.ruby-lang.org/en/",
   },
   {
-    title: "Render",
-    icon: "platforms/render",
-    url: "https://render.com/",
-  },
-  {
-    title: "GitHub",
-    icon: "fa-brands:github",
-    url: "https://pages.github.com/",
-  },
-  {
-    title: "GitLab",
-    icon: "fa-brands:gitlab",
-    url: "https://docs.gitlab.com/ee/user/project/pages/",
+    title: "Python",
+    icon: "languages/python",
+    url: "https://www.python.org/",
   },
 ];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
+<ContentSection title="Technologies" id="technologies">
   <Fragment slot="lead">
-    Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
-    <span class="text-primary">framework</span>
-     and deploy to your favorite <span class="text-primary">platform</span>.
+    At Devpal Solutions, we believe in <span class="text-primary"
+      >utilizing the most effective and cutting-edge tools</span
+    > to deliver superior digital solutions. From robust back-end languages to
+    versatile front-end frameworks, our technology stack is carefully selected
+    to ensure <span class="text-primary">excellence</span> in every project.
   </Fragment>
   <CompatibilityList
     items={frameworks}
     title="Frameworks"
-    url="https://docs.astro.build/core-concepts/framework-components/"
+    listClassName="sm:grid-cols-3 md:grid-cols-6"
   />
   <CompatibilityList
-    items={platforms}
-    title="Platforms"
-    url="https://docs.astro.build/guides/deploy/"
+    items={languages}
+    title="Languages"
+    listClassName="md:grid-cols-4"
   />
 </ContentSection>
